@@ -1,0 +1,83 @@
+<style>
+
+.leftpad
+{
+	padding-left: 408px !important;
+}
+
+.backclr
+{
+	background-color: lightgray;
+}
+
+.backimgvis
+{
+	background-image: url(../images/backproperty.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.clrw
+{
+	color: #006294; !important;
+}
+
+.cset
+{
+	color: #006294;
+}
+
+/* CEO MESSAGE HEADER  */
+
+h3.w3l-titlesm {
+    font-size: 3.8em;
+    text-align: center;
+    margin-bottom: 1.3em;
+    position: relative;
+    font-style: italic;
+}
+h3.w3l-titlesm:before, h3.w3l-titlesm:after {
+    content: " ";
+    background: #fa6839;
+    position: absolute;
+    width: 8%;
+    height: 2px;
+}
+
+h3.w3l-titlesm:before {
+    left: 29%;
+}
+h3.w3l-titlesm:after {
+    right: 29%;
+    top: 106%;
+}
+
+/* SERVICES HEADER  */
+
+h3.w3l-titlesi {
+    font-size: 3.8em;
+    text-align: center;
+    margin-bottom: 1.3em;
+    position: relative;
+    font-style: italic;
+}
+h3.w3l-titlesi:before, h3.w3l-titlesi:after {
+    content: " ";
+    background: #fa6839;
+    position: absolute;
+    width: 8%;
+    height: 2px;
+}
+
+h3.w3l-titlesi:before {
+    left: 34%;
+}
+h3.w3l-titlesi:after {
+    right: 34%;
+    top: 106%;
+}
+
+</style>

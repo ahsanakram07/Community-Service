@@ -1,0 +1,208 @@
+@charset "utf-8";
+/* CSS Document */
+<style>
+
+.services-breadcrumb
+{
+	padding: 1em 1em !important;
+	background: #f5f5f5 !important;
+	text-align: center !important;
+}
+
+.services-breadcrumb ul li span 
+{
+	padding: 0 1.5em !important;
+}
+
+.inner_breadcrumb 
+{
+	padding: 0 4.1em;
+}
+
+ul.short_w3ls_agile 
+{
+	text-align: left;
+}
+
+ul.short_w3ls_agile li 
+{
+	text-align: left;
+	display: inline-block;
+	letter-spacing: 1px;
+	color: #555;
+	font-size: 0.85em;
+}
+
+ul.short_w3ls_agile li a 
+{
+	color: #f44336;
+	text-decoration: none;
+}
+
+/*-- /banner_bottom --*/
+
+.banner_bottom_left h4 
+{
+	font-size: 1.6em;
+	color: #4d4e4e;
+	letter-spacing: 1px;
+	position: relative;
+	font-weight: 400;
+	line-height: 1.6em;
+	margin-bottom: 1em;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.banner_bottom_left h4 span 
+{
+	font-weight: 100;
+}
+
+.help_full img,
+.help_full img 
+{
+	width: 100%;
+}
+
+.news-main 
+{
+	margin-top: 4em;
+	border-top: 1px solid #ddd;
+	padding-top: 3em;
+}
+
+.banner_bottom_left p 
+{
+	margin-bottom: 1em;
+}
+
+.banner_bottom,
+.mid_slider,
+.tabs_section 
+{
+	padding: 6em 0;
+}
+
+.news-left 
+{
+	padding-left: 0;
+}
+
+.b_left 
+{
+	padding: 0;
+}
+
+.b_right 
+{
+	padding: 0;
+}
+
+.news-right h4 
+{
+	color: #333;
+	font-size: 2.5em;
+	font-weight: 500;
+}
+
+p.sub_p 
+{
+	margin: 1.2em 0;
+}
+
+.inner_sec_info_w3ls_agile,
+.mail_form 
+{
+	margin-top: 4em;
+}
+
+h3.tittle 
+{
+	color: #333;
+	text-align: center;
+	font-size: 3em;
+	font-weight: 700;
+}
+
+h3.tittle.ser 
+{
+	color: #fff;
+}
+
+.ab_info 
+{
+	margin-bottom: 2em;
+}
+
+.ab_info h4 
+{
+	margin-top: 1em;
+	font-size: 1.4em;
+}
+
+
+/*-- //banner_bottom --*/
+
+.setcrumb
+{
+	background-color: #aabeb9;
+    font-size: 23px;
+    height: 85px;
+    padding-top: 22px;
+}
+
+.backcarimgb 
+{
+    background-color: rgba(0, 0, 0, 0.55);
+    height: 405px;
+    width: 100%;
+}
+
+.casimgb 
+{
+    background-image: url(../images/g8.jpg);
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 405px;
+    width: 100%;
+}
+
+.bgsb 
+{
+    padding-top: 102px;
+    text-align: center;
+}
+
+/* BLOG HEADER  */
+
+h3.w3l-titlese {
+    font-size: 3.8em;
+    text-align: center;
+    margin-bottom: 1.3em;
+    position: relative;
+    font-style: italic;
+}
+h3.w3l-titlese:before, h3.w3l-titlese:after {
+    content: " ";
+    background: #fa6839;
+    position: absolute;
+    width: 8%;
+    height: 2px;
+}
+
+h3.w3l-titlese:before {
+    left: 40%;
+}
+h3.w3l-titlese:after {
+    right: 40%;
+    top: 106%;
+}
+
+.cl
+{
+	color: black !important;
+}
+
+</style>

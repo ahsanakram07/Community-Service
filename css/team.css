@@ -1,0 +1,365 @@
+@charset "utf-8";
+/* CSS Document */
+<style>
+
+/*-- team --*/
+
+.teamclr
+{
+  background-color: rgba(153, 153, 153, 0.17) !important;
+}
+.sets
+{
+  font-family: 'PT Sans Narrow', sans-serif !important;
+  font-size: 1.2em !important;
+  letter-spacing: 1px !important;
+  line-height: 1.9em !important;
+  color: #999 !important;
+}
+
+
+.some-happy-clients-list h3.w3l-titles
+{
+	color:#fff;
+}
+
+.two-grids, .about-w3l, .team, .wthree_stat, .agileits-gallery, .about, .w3_wthree_agileits_icons, .typo, .contact
+{
+	padding: 5em 0;
+}
+
+.wthree_stat_left 
+{
+  margin: 2.5em 0 0;
+}
+.wthree_stat_left h3
+{
+	color:#fff !important;
+}
+.wthree_stat_left p
+{
+	margin:1em 0 0;
+	color:#fff;
+	line-height:2em;
+}
+.wthree_stat_right ul li 
+{
+  padding: 2em 2em;
+  text-align: center;
+  border-bottom: 2px dotted #fff;
+  display: inline-block;
+  width: 30%;
+}
+.wthree_stat_right ul li:nth-child(2)
+{
+	margin:0 2em;
+}
+.wthree_stat_right1 i 
+{
+  font-size: 2.5em;
+  color: #fff;
+}
+.wthree_stat_right1 h4
+{
+	font-size:1.5em;
+	color:#fa6a38;
+	margin:1em 0;
+}
+.wthree_stat_right1 p
+{
+	font-size:3em;
+	color:#fff;
+	font-weight:bold;
+}
+
+.resp-tabs-list li 
+{
+  width: 58%;
+}
+
+.resp-tabs-list li
+{
+  opacity: .5;
+}
+
+.resp-tabs-list li img 
+{
+  border-radius: 100%;
+	-webkit-border-radius: 100%;
+  -o-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
+  -o-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
+  -ms-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
+}
+
+.hovteam:hover
+{
+	background-color: white !important;
+	color: #293f50 !important;
+	transition: 1s all !important;
+	-webkit-transition: 1s all !important;
+	-moz-transition: 1s all !important;
+	-o-transition: 1s all !important;
+	-ms-transition: 1s all !important;
+}
+
+.hovteam
+{
+	background-image: none !important;
+	background-color: #293f50 !important;
+	color: white;
+	width: 190px;
+  margin-bottom: 40px;
+}
+
+.faset 
+{
+  padding: 20px !important;
+  font-size: 15px !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  margin: 5px 2px !important;
+  border-radius: 50% !important;
+}
+
+.faset:hover 
+{
+  opacity: 0.7 !important;
+  color: white;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+}
+
+.fd 
+{
+  background: #3B5998;
+  color: white;
+  width: 53px;
+  height: 
+}
+
+.td 
+{
+  background: #55ACEE;
+  color: white;
+}
+
+.gd 
+{
+  background: #dd4b39;
+  color: white;
+}
+
+.fr 
+{
+  background: #ff6600;
+  color: white;
+}
+
+
+/*----------------------------------------
+ 8.Team Area Css
+----------------------------------------*/
+
+.team-member {
+  background: rgba(0, 0, 0, 0.65) none repeat scroll 0 0;
+  display: block;
+  margin-right: -15px;
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.team-member::before {
+  background: rgba(0, 0, 0, 0) url("../img/team/team01.jpg") repeat scroll 0 0;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  margin-right: -15px;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  transition: 5s;
+  transform: scale(1);
+}
+
+.team-member:hover.team-member::before {
+  transform: scale(1.2);
+}
+
+.single-team-member {
+  border: 1px solid #ddd;
+}
+
+.team-left-text h4 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.team-left-text p {
+  color: #fff;
+  font-size: 17px;
+  line-height: 26px;
+}
+
+.email-news {
+  display: block;
+  margin: 30px 0;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+}
+
+.email-news .email_button input {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 1px solid #fff;
+  color: #fff;
+  float: left;
+  font-size: 13px;
+  padding: 8px;
+  width: 81%;
+}
+
+.email-news .email_button>button {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border: 1px solid #fff;
+  color: #fff;
+  float: left;
+  font-size: 16px;
+  padding: 8px 12px;
+  text-align: center;
+}
+
+.email-news .email_button>button:hover {
+  background: #3EC1D5;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.team-left-icon ul li {
+  display: inline-block;
+}
+
+.team-left-icon ul li a:hover {
+  color: #3EC1D5;
+  background: #fff;
+  border: 2px solid #fff;
+}
+
+.team-left-icon ul li a {
+  border: 2px solid #fff;
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  height: 40px;
+  line-height: 37px;
+  margin: 0 3px;
+  width: 40px;
+}
+
+.team-member-carousel .single-team-member {
+  overflow: hidden;
+  width: 100%;
+}
+
+.single-team-member:hover .team-img a:after {
+  opacity: 1;
+}
+
+.single-team-member:hover .team-social-icon {
+  top: 45%;
+  opacity: 1;
+}
+
+.team-img {
+  position: relative;
+}
+
+.team-img>a {
+  display: block;
+}
+
+.team-img>a::after {
+  background: rgba(0, 0, 0, 0.70);
+  bottom: 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  transition: all 0.5s ease 0s;
+  width: 100%;
+  opacity: 0;
+}
+
+.team-social-icon {
+  left: 50%;
+  margin-left: -61px;
+  opacity: 0;
+  position: absolute;
+  top: 30%;
+  transition: 1.3s;
+}
+
+.team-social-icon ul li {
+  display: inline-block;
+}
+
+.team-social-icon ul li a {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  display: block;
+  font-size: 14px;
+  height: 34px;
+  line-height: 35px;
+  margin: 0 3px;
+  width: 34px;
+}
+
+.team-social-icon ul li a:hover {
+  color: #fff;
+  border: 1px solid #3EC1D5;
+  background: #3EC1D5;
+}
+
+.team-content {
+  padding: 10px 0px;
+}
+
+.team-content>h4, .team-content>p {
+  color: white;
+  margin-bottom: 5px;
+}
+
+.team-content.head-team p {
+  margin-bottom: 0;
+}
+
+.team-left-icon.text-center {
+  margin-bottom: 20px;
+}
+
+.head-team h4 {
+  display: inline-block;
+  font-size: 25px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+</style>
