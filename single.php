@@ -6,7 +6,7 @@
 
 		<ul class="short_w3ls_agile">
 			<li><a href="index.php">Home</a><span>|</span></li>
-			<li>Blog</li>
+			<li><a href="blog.php">Blog</a></li>
 			<li> &nbsp &nbsp | &nbsp &nbsp Single Post</li>
 		</ul>
 	</div>

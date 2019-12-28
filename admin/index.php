@@ -48,8 +48,6 @@
 
         ?>
 
-
-
         <div class="col-sm-12 mb-4">
             <div class="card-group">
                 <div class="card col-lg-2 col-md-6 no-padding bg-flat-color-1">
@@ -62,7 +60,7 @@
                             <span class="count"><?php echo $row1 ?></span>
                         </div>
                         <small class="text-uppercase font-weight-bold text-light">MEMBERS</small>
-                        <div class="progress progress-xs mt-3 mb-0 bg-light" style="width: 40%; height: 5px;"></div>
+                        <div id="record1" class="progress progress-xs mt-3 mb-0 bg-light" style="height: 5px;"></div>
                     </div>
                 </div>
                 <div class="card col-lg-2 col-md-6 no-padding no-shadow">
@@ -126,32 +124,77 @@
                     </div>
                 </div>
             </div>
-	        <div style="padding-top: 15px;" id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-				<ol class="carousel-indicators">
-				    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-				    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-				    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-				</ol>
-				<div class="carousel-inner">
-				    <div class="carousel-item active">
-				      	<img class="d-block w-100" height="500" src="images/property/1.jpg" alt="First slide">
-				    </div>
-				    <div class="carousel-item">
-				      	<img class="d-block w-100" height="500" src="images/property/2.jpg" alt="Second slide">
-				    </div>
-				    <div class="carousel-item">
-				      	<img class="d-block w-100" height="500" src="images/property/6.jpg" alt="Third slide">
-				    </div>
-				</div>
-				<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				    <span class="sr-only">Previous</span>
-				</a>
-				<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-				    <span class="sr-only">Next</span>
-				</a>
-			</div>
+
+            <?php
+
+                $booking_sql = "SELECT Booking_Date FROM bookings";
+
+                $result=mysqli_query($connection,$booking_sql);
+                $row=mysqli_fetch_assoc($result);
+
+                $bookings = array();
+
+                do
+                {
+                    $bookings[] = $row['Booking_Date'];
+                }while($row=mysqli_fetch_assoc($result));
+
+                foreach ($bookings as $value) 
+                {
+                    $bookings_dates[] = date('F-Y',$value++);
+                }
+
+                $monthly_bookings = array_count_values($bookings_dates);
+                $header['Month'] = 'Bookings'; 
+
+                $chart_date = $header + $monthly_bookings;
+
+                $json_data = json_encode($chart_date);
+
+            ?>
+
+            <div id="phpJS"><?php echo $json_data ?></div>
+
+            <script type="text/javascript">
+
+                var chart_data = document.getElementById('phpJS').innerHTML;
+                var correct_format = JSON.parse(chart_data);
+                var correct_json_string = JSON.stringify(correct_format);
+                var correct_json_object = JSON.parse(correct_json_string);
+
+                var correct_json_array = Object.entries(correct_json_object);
+
+                google.charts.load("current", {packages:['corechart']});
+                google.charts.setOnLoadCallback(drawChart);
+                function drawChart() 
+                {
+                    var data = google.visualization.arrayToDataTable(correct_json_array);
+
+                    var view = new google.visualization.DataView(data);
+
+                    var options = 
+                    {
+                        title: "Monthly Bookings",
+                        width: 1090,
+                        height: 400,
+                        chartArea: {
+                            left: 40,
+                            top: 10,
+                            width: 1080,
+                            height: 350
+                        },
+                        colors: ['#117a8b']
+                    };
+                    var chart = new google.visualization.ColumnChart(document.getElementById("bookings_chart"));
+                    chart.draw(view, options);
+                }
+            </script>
+
+            <div class="container" style="padding: 20px; color: #00000087">
+                <h1>Monthly Bookings</h1>
+            </div>
+            <div id="bookings_chart" style="width: 100%; height: 300px;"></div>
+
         </div>
         
 

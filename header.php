@@ -41,22 +41,24 @@
 	<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.1/jquery.fancybox.min.js"></script>
 
+	<!-- Fancy Alert Plugin -->
+
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.css">
+
+	<!-- Owl Carousel -->
+
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
 
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.1/jquery.fancybox.min.css" />
 
-	<!-- <link rel='stylesheet' href="css/set/easy-responsive-tabs.css" type='text/css' /> -->
+	<!-- Fontawesome -->
 
-	<link href="fontawesome 5.0.10//web-fonts-with-css/css/fontawesome-all.css" rel="stylesheet">
+<!-- 	<link href="https://fontawesome 5.0.10//web-fonts-with-css/css/fontawesome-all.css" rel="stylesheet"> -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" 
 	      rel="stylesheet">
-
-	<!-- side nav css file -->
-		<!-- <link href='css/SidebarNav.min.css' media='all' rel='stylesheet' type='text/css'/> -->
-	<!-- //side nav css file -->
-
 	
 </head>
 <body>
@@ -170,14 +172,10 @@
 <div id="myModal" class="modal agset">
 
   <!-- Modal content -->
-  	<div class="modal-content">
-	   <div class="modal-header">
-
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-	            <span aria-hidden="true">&times;</span>
-	        </button>
-
-	    </div>
+  	<div class="modal-contents">
+	    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin: 19px;">
+          <span aria-hidden="true">&times;</span>
+        </button>
 	    <section class="setimgbc">
 			<div id="page-wrapper">
 				<div class="main-page signup-page">
@@ -220,7 +218,7 @@
 		                            <div class="col-sm-12 col-md-6 col-xs-12 col-lg-6">
 										<h6>Login Information :</h6>
 										<div class="sign-u">
-											<input type="password" name="pwd" placeholder="Password" id="password" required="">
+											<input type="password" name="pwd" placeholder="Password" id="password_login" required="">
 											<div class="clearfix"> </div>
 										</div>
 										<div class="sign-u">
@@ -262,17 +260,15 @@
 	    <!-- Modal content -->
 
 	    <div class="modal-dialog-centered" role="document">
-		    <div class="modal-content">
-		        <div class="modal-header">
-
-			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		    <div class="modal-content" style="width: 455px;">
+		        
+		        <div>
+		        	<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin: 19px;">
 			          <span aria-hidden="true">&times;</span>
 			        </button>
-		        </div>
-		        <div>
 			    	<section class="setimgbc">
 						<div id="page-wrapper">
-							<div class="main-page signup-page setcen loginwidth">
+							<div class="main-page signup-page setcen_login loginwidth">
 								<h2 class="title1">LOGIN</h2>
 								<div class="sign-up-row widget-shadow">
 									<h5>Personal Information :</h5>

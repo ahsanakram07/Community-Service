@@ -119,8 +119,8 @@
 
 						if ($rowqt['Status']=='Free') 
 						{
-							$sql="INSERT INTO bookings(Name,Email,Mobile_No,Address,Service,Admin_ID)
-						      VALUES ('$name','$email','$mobile','$address','$service','46')";
+							$sql="INSERT INTO bookings(Name,Email,Mobile_No,Address,Service,Booking_Date,Admin_ID)
+						      VALUES ('$name','$email','$mobile','$address','$service',time(),'46')";
 
 							$row=mysqli_query($connection,$sql);
 

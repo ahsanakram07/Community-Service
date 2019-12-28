@@ -1473,16 +1473,11 @@ h3.w3l-titless:before, h3.w3l-titless:after {
   background-color: hsla(208, 56%, 46%, 0.31);
 }
 
-.signup-page 
-{
-  /*width: 40%;
-  margin: 1em auto 0;*/
-}
 
-.setcen 
+.setcen_login 
 {
-  width: 40% !important;
-  margin: 1em auto 0 !important;
+  /*width: 40% !important;*/
+  /*margin: 1em auto 0 !important;*/
 }
 
 .login-page h2.title1,.signup-page h2.title1
@@ -1657,7 +1652,7 @@ p.creating
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
    /* z-index: 1;*/ /* Sit on top */
-    padding-top: 28px; /* Location of the box */
+    padding-top: 123px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -1669,6 +1664,20 @@ p.creating
 
 /* Modal Content */
 .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 34%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+.modal-contents {
     position: relative;
     background-color: #fefefe;
     margin: auto;

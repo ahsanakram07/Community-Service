@@ -104,7 +104,7 @@ aside.left-panel {
   min-height: 100%;
   padding: 0 25px;
   vertical-align: top;
-  width: 280px;
+  width: 227px;
   transition: width 0.3s ease; }
 
 .navbar {
@@ -178,7 +178,7 @@ aside.left-panel {
           color: #8b939b;
           float: left;
           margin-top: 8px;
-          width: 55px;
+          width: 22px;
           text-align: left;
           z-index: 9; }
         .navbar .navbar-nav li > a .menu-title-text {
@@ -601,3 +601,4 @@ header .form-inline {
   display: block; }
 
 /*# sourceMappingURL=style.css.map */
+

@@ -6,7 +6,7 @@
 
 		<ul class="short_w3ls_agile">
 			<li><a href="index.php">Home</a><span>|</span></li>
-			<li>Properties</li>
+			<li><a href="properties.php">Properties</a></li>
 			<li> &nbsp &nbsp | &nbsp &nbsp Single Property</li>
 		</ul>
 	</div>

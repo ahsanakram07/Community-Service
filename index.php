@@ -66,7 +66,7 @@
 				<div class="col-xs-4 col-sm-4 col-md-3">
 					<div class="row form-group">
 		                <div class="col-xs-12 col-sm-12 col-md-9 sew last">
-		                    <select name="type" id="SelectLm" class="form-control-sm form-control hov" style="width: 160px;">
+		                    <select name="type" id="Select_Type" class="form-control-sm form-control hov" style="width: 160px;">
 		                        <option value="No_Type">Please select</option>
 		                        <option value="Residential Plot">Residential Plot</option>
 		                        <option value="Commercial Plot">Commercial Plot</option>
@@ -82,7 +82,7 @@
 				<div class="col-xs-4 col-sm-4 col-md-3">
 					<div class="row form-group">
 		                <div class="col-xs-12 col-sm-12 col-md-9 sew last">
-		                    <select name="purpose" id="SelectLm" class="form-control-sm form-control hov" style="width: 160px;">
+		                    <select name="purpose" id="Select_Purpose" class="form-control-sm form-control hov" style="width: 160px;">
 		                        <option value="None">Please select</option>
 		                        <option value="Sale">Purchase</option>
 		                        <option value="Rent">Rent</option>
@@ -122,7 +122,10 @@
 				{
 		?>
 					<script language="javascript">
-					alert("Search Results Are Below")
+					function JSalert()
+					{
+						swal("Search Results Are Below");
+					}
 					</script>
 
 						<center>
@@ -421,7 +424,7 @@
 							<textarea name="address" placeholder="Address *" required=""></textarea>
 
 							<label for="job">
-									Select Service
+								Select Service
 							</label>
 							<select id="job" name="service" required="">
 							    <option value="">SELECT</option>
@@ -459,8 +462,8 @@
 
 						if ($rowqt['Status']=='Free') 
 						{
-							$sql321="INSERT INTO bookings(Name,Email,Mobile_No,Address,Service,Admin_ID)
-						      VALUES ('$name','$email','$mobile','$address','$service','46')";
+							$sql321="INSERT INTO bookings(Name,Email,Mobile_No,Address,Service,Booking_Date,Admin_ID)
+						      VALUES ('$name','$email','$mobile','$address','$service',time(),'46')";
 
 							$row321=mysqli_query($connection321,$sql321);
 
